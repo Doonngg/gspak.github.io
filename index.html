@@ -8,11 +8,41 @@
 				margin: 0;
 				padding: 0;
 			}
+			.tabs{
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+				opacity: 0.4;
+			}
+			.tabs:hover{
+				opacity: 1;
+			}
+			button{
+				padding: 8px;
+			}
 		</style>
 	</head>
 	<body>
 		<div style="width: 100%;">
 			<img style="width: 100%;" src="img/1.jpg">
 		</div>
+		<div class="tabs">
+			<button class="tabs1">样式一</button>
+			<button class="tabs2">样式二</button>
+			<button class="tabs3">样式三</button>
+		</div>
 	</body>
+	<script>
+		let btn1 = document.querySelectorAll("button");
+		let img = document.querySelector("img");
+		let i;
+		for(i=0; i<btn1.length;i++){
+			btn1[i].index = i;
+			btn1[i].addEventListener("click",function(){
+				img.setAttribute("src", "img/" + (this.index + 1) + ".jpg");
+				console.log("img/" + (this.index + 2) + ".jpg");
+			})
+		}
+		
+	</script>
 </html>
