@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="style.css">
 		<meta charset="utf-8" />
 		<title></title>
-		<style>
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			.tabs{
-				position: fixed;
-				right: 20px;
-				bottom: 20px;
-				opacity: 0.4;
-			}
-			.tabs:hover{
-				opacity: 1;
-			}
-			button{
-				padding: 8px;
-			}
-		</style>
 	</head>
 	<body>
-		<div style="width: 100%;">
-			<img style="width: 100%;" src="img/1.jpg">
+		<div class="head">
+			<img src="img/logo.png">
+			<div class="search">
+				<input type="text" />
+				<div><img src="img/so.png"></div>
+			</div>
 		</div>
-		<div class="tabs">
-			<button class="tabs1">样式一</button>
-			<button class="tabs2">样式二</button>
-			<button class="tabs3">样式三</button>
-		</div>
+		<ul class="center">
+			<li>
+				<a href="新政采1/index.html">
+					<div class="moban_img">
+						<img src="img/1.png">
+					</div>
+					<div class="moban_p">
+						<p>模板一</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="新政采2/index.html">
+					<div class="moban_img">
+						<img src="img/2.png">
+					</div>
+					<div class="moban_p">
+						<p>模板二</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="新政采3/index.html">
+					<div class="moban_img">
+						<img src="img/3.png">
+					</div>
+					<div class="moban_p">
+						<p>模板三</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="新政采4/index.html">
+					<div class="moban_img">
+						<img src="img/4.png">
+					</div>
+					<div class="moban_p">
+						<p>模板四</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="新政采4/index.html">
+					<div class="moban_img">
+						<img src="img/4.png">
+					</div>
+					<div class="moban_p">
+						<p>模板四</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="新政采6/index.html">
+					<div class="moban_img">
+						<img src="img/6.png">
+					</div>
+					<div class="moban_p">
+						<p>模板六</p>
+					</div>
+				</a>
+			</li>
+		</ul>
 	</body>
 	<script>
 		let btn1 = document.querySelectorAll("button");
