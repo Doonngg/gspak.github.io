@@ -316,6 +316,7 @@ ul.cars li .price {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
+	flex-grow: 1;
 }
 
 .banner_div .sort dl span {
